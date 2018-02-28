@@ -62,12 +62,17 @@ public class Login extends AppCompatActivity {
                                 }
                                 else
                                 {
-                                    Toast.makeText(Login.this , "Check email and password again",Toast.LENGTH_LONG).show();
+                                    Toast.makeText(Login.this , "Try Again",Toast.LENGTH_LONG).show();
                                 }
                             }
                         });
 
-                    }}
+                    }
+            else {
+                             Toast.makeText(Login.this , "Check Email and password again",Toast.LENGTH_LONG).show();}
+            }
+
+
 
         });
 }
