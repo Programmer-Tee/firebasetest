@@ -30,6 +30,8 @@ Button btn ; EditText password; EditText email ; Button btn2 ;
         {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
+
+
                 public void onClick(View view) {
                     startActivity(new Intent(Signup.this, Login.class));
                 }
