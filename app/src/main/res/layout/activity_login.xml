@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tobeisun.foodapp.Login">
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoginn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <Button
+        android:id="@+id/buttonLoginn"
+        android:layout_width="137dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="60dp"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignupp"
+        tools:layout_editor_absoluteX="103dp" />
+
+    <Button
+        android:id="@+id/buttonSignupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+</android.support.constraint.ConstraintLayout>
