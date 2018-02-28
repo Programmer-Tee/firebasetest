@@ -19,7 +19,7 @@ Button btn ; EditText password; EditText email ; Button btn2 ;
         btn = (Button) findViewById(R.id.buttonLogin) ;
         password=(EditText) findViewById(R.id.editTextPassword) ;
         email =(EditText) findViewById(R.id.editTextEmail) ;
-        btn2=(Button) findViewById(R.id.buttonSignupp) ;
+        btn2=(Button) findViewById(R.id.buttonSignUp) ;
 
 
 

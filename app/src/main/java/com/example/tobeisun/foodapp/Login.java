@@ -18,8 +18,8 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        btn = (Button) findViewById(R.id. buttonSignUp) ;
-        btn2 =(Button) findViewById(R.id.buttonLogin) ;
+        btn = (Button) findViewById(R.id. buttonSignupp) ;
+        btn2 =(Button) findViewById(R.id.buttonLoginn) ;
         email=(EditText) findViewById(R.id.editTextEmail) ;
         Password=(EditText) findViewById(R.id.editTextPassword)  ;
 
