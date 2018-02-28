@@ -3,6 +3,7 @@ package com.example.tobeisun.foodapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,7 +27,7 @@ Button btn ; EditText password; EditText email ; Button btn2 ;
 
 
 
-        if(password.length()==6)
+        if((!TextUtils.isEmpty(password.getText()))||password.getText().length()==6)
         {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -41,7 +42,7 @@ Button btn ; EditText password; EditText email ; Button btn2 ;
 
             else
         {
-            Toast.makeText(Signup.this, "PASSWORD MUST BE 6 CHARACTERS",Toast.LENGTH_LONG) ;
+            Toast.makeText(Signup.this, "PASSWORD MUST BE 6 CHARACTERS",Toast.LENGTH_LONG).show(); ;
         }
 
             }

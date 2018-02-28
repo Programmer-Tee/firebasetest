@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Foodapp.iml" filepath="$PROJECT_DIR$/Foodapp.iml" />
+      <module fileurl="file://C:\Users\t.obeisun\AndroidStudioProjects\firebasetest\Foodapp.iml" filepath="C:\Users\t.obeisun\AndroidStudioProjects\firebasetest\Foodapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\t.obeisun\AndroidStudioProjects\firebasetest\app\app.iml" filepath="C:\Users\t.obeisun\AndroidStudioProjects\firebasetest\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firebasetest.iml" filepath="$PROJECT_DIR$/firebasetest.iml" />
     </modules>
   </component>
 </project>
