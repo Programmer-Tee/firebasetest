@@ -45,20 +45,21 @@ public class Login extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((!TextUtils.isEmpty(Password.getText())) && Password.getText().toString().trim().length() == 6 && (!TextUtils.isEmpty(email.getText())) && Patterns.EMAIL_ADDRESS.matcher(email.getText()).matches()) {
+                if ((!TextUtils.isEmpty(Password.getText())) && Password.getText().toString().trim().length() == 6 && (!TextUtils.isEmpty(email.getText().toString().trim())) && Patterns.EMAIL_ADDRESS.matcher(email.getText().toString().trim()).matches()) {
 
 
                     bar.setVisibility(View.VISIBLE);
 
 
-                        auth.signInWithEmailAndPassword(email.getText().toString(), Password.getText().toString()).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                        auth.signInWithEmailAndPassword(email.getText().toString().trim(), Password.getText().toString().trim()).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
                                 bar.setVisibility(View.GONE);
                                 if(task.isSuccessful())
                                 {
-                                    startActivity(new Intent(Login.this, User.class));
+                                    startActivity(new Intent(Login.this, Message.class));
+                                    finish();
                                 }
                                 else
                                 {

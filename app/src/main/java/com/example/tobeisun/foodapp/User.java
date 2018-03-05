@@ -23,6 +23,7 @@ public class User extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(User.this, Login.class));
+                finish();
             }
         });
     }
