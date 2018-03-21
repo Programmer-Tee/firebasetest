@@ -59,7 +59,9 @@ public class Login extends AppCompatActivity {
                                 if(task.isSuccessful())
                                 {
                                     startActivity(new Intent(Login.this, Message.class));
+
                                     finish();
+
                                 }
                                 else
                                 {
