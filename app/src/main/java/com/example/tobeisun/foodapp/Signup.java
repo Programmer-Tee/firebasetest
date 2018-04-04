@@ -42,6 +42,13 @@ public class Signup extends AppCompatActivity {
         progressBar = findViewById(R.id.signUpprogressBar);
 
 
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Signup.this, Login.class));
+            }
+        });
+
         //handle action when signup button is clicked
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
